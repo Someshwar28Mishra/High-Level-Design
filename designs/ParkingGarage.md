@@ -19,15 +19,15 @@ This document outlines the design for a **Parking Garage System**, which allows 
 
 ```
 +-------------------------+---------------------------------------------+
-| Endpoint               | Parameters                                  |
+| Endpoint               | Parameters                                   |
 +-------------------------+---------------------------------------------+
-| Spot Reservation       | garage_id, start_time, end_time             |
-|                        | Returns: spot_reservation_id                |
+| Spot Reservation       | garage_id, start_time, end_time              |
+|                        | Returns: spot_reservation_id                 |
 +-------------------------+---------------------------------------------+
-| Payment                | reservation_id                              |
-|                        | Note: Handled via external API (Stripe)     |
+| Payment                | reservation_id                               |
+|                        | Note: Handled via external API (Stripe)      |
 +-------------------------+---------------------------------------------+
-| Cancel Reservation     | reservation_id                              |
+| Cancel Reservation     | reservation_id                               |
 +-------------------------+---------------------------------------------+
 ```
 
@@ -35,18 +35,18 @@ This document outlines the design for a **Parking Garage System**, which allows 
 
 ```
 +-------------------------+---------------------------------------------+
-| Endpoint               | Parameters                                  |
+| Endpoint               | Parameters                                   |
 +-------------------------+---------------------------------------------+
-| Calculate Payment      | reservation_id                              |
+| Calculate Payment      | reservation_id                               |
 +-------------------------+---------------------------------------------+
-| Free Spot Availability | garage_id, vehicle_type, time               |
-|                        | Note: Smaller vehicles fit larger spots     |
+| Free Spot Availability | garage_id, vehicle_type, time                |
+|                        | Note: Smaller vehicles fit larger spots      |
 +-------------------------+---------------------------------------------+
-| Account Creation       | email, password, first_name, last_name      |
+| Account Creation       | email, password, first_name, last_name       |
 +-------------------------+---------------------------------------------+
-| Spot Allocation        | garage_id, vehicle_type, time               |
+| Spot Allocation        | garage_id, vehicle_type, time                |
 +-------------------------+---------------------------------------------+
-| User Login            | email, password                             |
+| User Login            | email, password                               |
 +-------------------------+---------------------------------------------+
 ```
 
@@ -89,7 +89,7 @@ This document outlines the design for a **Parking Garage System**, which allows 
 | Column        | Type       | Constraints                        |
 | ------------- | ---------- | ---------------------------------- |
 | id            | PK, serial | Unique vehicle ID                  |
-| user_id       | FK, int    | Foreign key referencing `users`     |
+| user_id       | FK, int    | Foreign key referencing `users`    |
 | vehicle_type  | enum       | Compact, Regular, Large            |
 | license       | varchar    | License plate number               |
 
