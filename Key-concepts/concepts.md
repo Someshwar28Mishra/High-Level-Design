@@ -516,8 +516,8 @@ Distributed Tracing is a technique for monitoring and debugging microservices by
 ---
 
 
-```
-## Summary:
+## Summary
+
 | Concept                 | Key Focus                        | Techniques & Examples                            |
 |-------------------------|----------------------------------|--------------------------------------------------|
 | **Scalability**         | Handling growth                  | Load balancing, caching, sharding                |
@@ -535,7 +535,6 @@ Distributed Tracing is a technique for monitoring and debugging microservices by
 | **Disaster Recovery**   | Failure recovery                 | Backups, multi-region deployment                 |
 | **Distributed Tracing** | Monitoring microservices         | Jaeger, Zipkin                                   |
 
-```
 
 
 ---
