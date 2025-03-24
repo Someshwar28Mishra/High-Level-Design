@@ -64,7 +64,7 @@ Example: Netflix uses horizontal scaling for its streaming service, adding more 
 
 ### 3. Load Balancing
 Load balancing is the process of distributing traffic across multiple servers to ensure no single server becomes overwhelmed.
-![image](diagram/a3.png)
+![image](diagram/a3.jpg)
 Example: Google employs load balancing extensively across its global infrastructure to distribute search queries and traffic 
 evenly across its massive server farms.
 
@@ -72,7 +72,7 @@ evenly across its massive server farms.
 Caching is a technique to store frequently accessed data in-memory (like RAM) to reduce the load on the server or database.
 
 Implementing caching can dramatically improve response times.
-![image](diagram/a4.png)
+![image](diagram/a4.jpg)
 Example: Reddit uses caching to store frequently accessed content like hot posts and comments so that they can be served 
 quickly without querying the database each time.
 
@@ -83,7 +83,7 @@ Example: Cloudflare provides CDN services, speeding up website access for users 
 
 ### 6. Sharding/Partitioning
 Partitioning means splitting data or functionality across multiple nodes/servers to distribute workload and avoid bottlenecks.
-![image](diagram/a5.png)
+![image](diagram/a5.jpg)
 Example: Amazon DynamoDB uses partitioning to distribute data and traffic for its NoSQL database service across many servers, ensuring fast performance and scalability.
 
 ### 7. Asynchronous communication
@@ -97,14 +97,14 @@ Example: Slack uses asynchronous communication for messaging. When a message is 
 Micro-services architecture breaks down application into smaller, independent services that can be scaled independently.
 
 This improves resilience and allows teams to work on specific components in parallel.
-![image](diagram/a6.png)
+![image](diagram/a6.jpg)
 Example: Uber has evolved its architecture into microservices to handle different functions like billing, notifications, and ride matching independently, allowing for efficient scaling and rapid development.
 
 ### 9. Auto Scaling
 Auto-Scaling means automatically adjusting the number of active servers based on the current load.
 
 This ensures that the system can handle spikes in traffic without manual intervention.
-![image](diagram/a7.png)
+![image](diagram/a7.jpg)
 Example: AWS Auto Scaling monitors applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost.
 
 
@@ -145,7 +145,7 @@ Keeping multiple copies of data and services.
 
 ### Failover Mechanisms
  Automatically switching to a backup system if the primary system fails.
-![image](diagram/a9.png)
+![image](diagram/a9.jpg)
 ### Techniques:
 **Active-Passive Failover:** A primary active component is backed by a passive standby component that takes over upon failure.
 
@@ -157,7 +157,7 @@ Keeping multiple copies of data across different servers.
 
 ### Load Balancing
 Distributing requests to prevent overload.
-![image](diagram/a3.png)
+![image](diagram/a3.jpg)
 ###Techniques:
 **Hardware Load Balancers:** Physical devices that distribute traffic based on pre-configured rules.
 
