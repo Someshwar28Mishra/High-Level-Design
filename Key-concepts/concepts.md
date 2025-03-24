@@ -787,17 +787,18 @@ RESTful APIs are widely used for web services, microservices, and cloud-based ap
 
 # Batch Processing vs Stream Processing
 
-| **Feature**          | **Batch Processing**                                                   |**StreamProcessing**                                                          |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Data Processing**  | Processes a large volume of data at once.                               | Processes data as it arrives, record by record.                                |
-| **Latency**          | High latency, as processing happens after data collection.              | Low latency, providing near real-time insights.                                |
-| **Throughput**       | Can handle vast amounts of data at once.                                | Optimized for real-time but might handle less data volume at a given time.     |
-| **Use Case**         | Ideal for historical analysis or large-scale data transformations.      | Best for real-time analytics, monitoring, and alerts.                          |
-| **Complexity**       | Relatively simpler to implement with predefined datasets.               | More complex, requires handling continuous streams.                            |
-| **Data Scope**       | Operates on a finite set of data.                                       | Operates on potentially infinite streams of data.                              |
-| **Error Handling**   | Errors can be identified and corrected before execution.                | Requires real-time handling of errors and failures.                            |
-| **Resource Usage**   | Resource-intensive during processing, idle otherwise.                   | Continuous use of resources.                                                   |
-| **Cost**             | Cost-effective for large volumes of data.                               | More expensive due to continuous processing.                                   |
+| **Feature**          | **Batch Processing**                                              |**StreamProcessing**                                                |
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| **Data Processing**  | Processes a large volume of data at once.                         | Processes data as it arrives, record by record.                    |
+| **Latency**          | High latency, as processing happens after data collection.        | Low latency, providing near real-time insights.                    |
+| **Throughput**       | Can handle vast amounts of data at once.                          |Optimized for real-time but might handle less data volume at a given| 
+|                      |                                                                   | time.                                                              |
+| **Use Case**         | Ideal for historical analysis or large-scale data transformations.| Best for real-time analytics, monitoring, and alerts.              |
+| **Complexity**       | Relatively simpler to implement with predefined datasets.         | More complex, requires handling continuous streams.                |
+| **Data Scope**       | Operates on a finite set of data.                                 | Operates on potentially infinite streams of data.                  |
+| **Error Handling**   | Errors can be identified and corrected before execution.          | Requires real-time handling of errors and failures.                |
+| **Resource Usage**   | Resource-intensive during processing, idle otherwise.             | Continuous use of resources.                                       |
+| **Cost**             | Cost-effective for large volumes of data.                         | More expensive due to continuous processing.                       |
 
 
 
