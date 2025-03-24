@@ -136,7 +136,7 @@ The formal definition of availability is:
 Keeping multiple copies of data and services.
 ![image](diagram/a8.png)
 
-###Techniques:
+### Techniques:
 **Server Redundancy:** Deploying multiple servers to handle requests, ensuring that if one server fails, others can continue to provide service.
 
 **Database Redundancy:** Creating a replica database that can take over if the primary database fails.
@@ -151,7 +151,7 @@ Keeping multiple copies of data and services.
 
 **Active-Active Failover:** All components are active and share the load. If one fails, the remaining components continue to handle the load seamlessly.
 
-###Replication
+### Replication
 Keeping multiple copies of data across different servers.
 ![image](diagram/a10.png)
 
